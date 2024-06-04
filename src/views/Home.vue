@@ -13,7 +13,7 @@
       </p>      
     </div>
     <div class="button">
-      <button class="btn">Explore</button> 
+      <button class="btn"><RouterLink to="/destination" class="explore">Explore</RouterLink></button> 
     </div>
   </main>
 </template>
@@ -61,9 +61,9 @@ main{
   justify-content: end;
 }
 .btn {
+  position: relative;
   width: 50%;
   background: var(--text-color);
-  color: var(--herobtntxt-color);
   padding: 117.5px 68px;
   width: 17rem;
   border-radius: 50%;
@@ -71,5 +71,34 @@ main{
   font-family: var(--title-font);
   font-size: 2rem;
   border: none;
+  text-decoration: none;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--text-color);
+  z-index: -1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+  opacity: 0;
+}
+
+.btn:hover::before {
+  transform: scale(1.5); /* Adjusted for larger size */
+  opacity: 0.2;
+}
+
+.explore {
+  text-decoration: none;
+  color: var(--herobtntxt-color);  
+}
+.explore:hover {
+  color: rgba(11, 13, 23, 0.5)
 }
 </style>

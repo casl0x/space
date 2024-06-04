@@ -46,6 +46,12 @@
   padding-block: 0.80rem;
   text-decoration: none;
 }
+.active-link {
+  border-bottom: 3px solid var(--text-color);
+}
+.link:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
 
 .link span {
   font-weight: bold;
