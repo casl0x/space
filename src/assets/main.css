@@ -1,6 +1,13 @@
 @import './base.css';
 
 body {
-  background: url('../assets/background.jpg') no-repeat;
+  background: url('../assets/home/background-home-desktop.jpg') no-repeat;
   background-size: cover;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-family: var(--span-font);
+  font-size: 1.75rem;
 }
