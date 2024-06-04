@@ -1,0 +1,6 @@
+@import './base.css';
+
+body {
+  background: url(src/assets/background-home-desktop.jpg) no-repeat;
+  background-size: cover;
+}
